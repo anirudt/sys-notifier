@@ -17,7 +17,7 @@ def parse_min(mn, time_struct):
         return 1
     else: 
         if mn.find('/')!=-1:
-            num = int(mn[mn.find('/'):-1])
+            num = int(mn[mn.find('/')+1:-1])
             if num%time_struct.tm_min==0:
                 return 1
             else:
